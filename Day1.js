@@ -47,3 +47,26 @@ console.log("typeof x4 => ", typeof x4);
 const x5 = BigInt(Number.MAX_SAFE_INTEGER);
 console.log("x5 => ", x5);
 console.log("typeof x5 => ", typeof x5);
+
+//Different Objects in Javascript
+let y0 = new Object(); // A new Object object
+let y1 = new Array(); // A new Array object
+let y2 = new Map(); // A new Map object
+let y3 = new Set(); // A new Set object
+let y4 = new Date(); // A new Date object
+let y5 = new RegExp(); // A new RegExp object
+let y6 = new Function(); // A new Function object
+console.log("\ny0 => ", y0);
+console.log("typeof y0 => ", typeof y0);
+console.log("\ny1 => ", y1);
+console.log("typeof y1 => ", typeof y1);
+console.log("\ny2 => ", y2);
+console.log("typeof y2 => ", typeof y2);
+console.log("\ny3 => ", y3);
+console.log("typeof y3 => ", typeof y3);
+console.log("\ny4 => ", y4);
+console.log("typeof y4 => ", typeof y4);
+console.log("\ny5 => ", y5);
+console.log("typeof y5 => ", typeof y5);
+console.log("\ny6 => ", y6);
+console.log("typeof y6 => ", typeof y6);
