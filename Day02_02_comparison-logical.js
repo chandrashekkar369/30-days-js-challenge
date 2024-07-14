@@ -97,3 +97,9 @@ console.log(`!${x37} => ${y19}`);
 const x38 = false;
 let y20 = !x38;
 console.log(`!${x38} => ${y20}`);
+
+//Nullish coalescing operator
+let x39;
+console.log(`Initialization value of x39 = ${x39}`);
+x39 ??= 25;
+console.log(`x39 ??= 25 ===> ${x39}`);
