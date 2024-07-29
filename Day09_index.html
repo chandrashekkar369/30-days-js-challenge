@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day09_DOM Manipulation</title>
+    <style>
+      .highlight {
+        background-color: skyblue;
+        color: red;
+      }
+      #boxcontainer {
+        width: 200px;
+        height: 50px;
+        border: 5px solid black;
+        transition: border-color 0.3s; /* Smooth transition for border color */
+      }
+    </style>
+  </head>
+  <body>
+    <p id="dom">Happy</p>
+    <button onclick="setTextById()">Change Element text selected by ID</button>
+    <br />
+    <br />
+    <p class="domx">Enjoy</p>
+    <button onclick="setTextByClass()">
+      Change Element text selected by Class
+    </button>
+    <br />
+    <br />
+    <button onclick="appendNewDiv()">Apppend new div as a Child</button>
+    <br />
+    <br />
+    <ul id="ulEl0">
+      <li>item 1</li>
+      <li>item 2</li>
+      <li>item 3</li>
+    </ul>
+    <button onclick="appendLiInUl()">Apppend li in existing ul element</button>
+    <button onclick="RemoveLiInUl()">Remove li from ul</button>
+    <button onclick="RemoveLastLiInUl()">Remove last child from ul</button>
+    <br />
+    <br />
+    <img src="" alt="no image its dummy here" id="image1" />
+    <button onclick="changeAttribute()">
+      Change attribute of image element
+    </button>
+    <br />
+    <br />
+    <p id="pEl">adding and removing the css class</p>
+    <button onclick="addCSSClass()">Add css class</button>
+    <button onclick="removeCSSClass()">Remove css class</button>
+    <br />
+    <br />
+    <p id="newP">Old Text</p>
+    <button onclick="changeText()">Change Paragraph Text</button>
+    <br />
+    <br />
+    <div id="boxcontainer" class="boxcontainer">Box Container</div>
+    <script src="Day09.js"></script>
+  </body>
+</html>
