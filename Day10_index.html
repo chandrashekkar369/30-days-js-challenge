@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>
+      • Task 1: Add a click event listener to a button that changes the text
+      content of a paragraph.
+    </h3>
+    <p id="P0">Paragraph Text</p>
+    <button id="b0" onclick="changeTextColor()">Change Text Color</button>
+    <br />
+    <br />
+    <h3>
+      • Task 2: Add a double-click event listener to an image that toggles its
+      visibility.
+    </h3>
+    <img
+      id="img0"
+      src="flower.jpg"
+      id="image0"
+      width="60"
+      height="60"
+      alt="flower image"
+    />
+    <br />
+    <br />
+    <button id="b1" onclick="toggleImageVisibilty()">
+      Toggle Image Visibility
+    </button>
+    <br />
+    <br />
+    <h3>
+      • Task 3: Add a mouseover event listener to an element that changes its
+      background color.
+    </h3>
+    <h3>
+      • Task 4: Add a mouseout event listener to an element that resets its
+      background color.
+    </h3>
+    <p id="p1">Text with background color</p>
+    <br />
+    <br />
+    <h3>
+      • Task 5: Add a keydown event listener to an input field that logs the key
+      pressed to the console.
+    </h3>
+    <input type="text" id="input0" placeholder="Enter text..." />
+    <h3>
+      • Task 6: Add a keyup event listener to an input field that displays the
+      current value in a paragraph.
+    </h3>
+    <input type="text" id="input1" placeholder="Enter text..." />
+    <p id="p2">old paragraph Text</p>
+    <br /><br />
+    <h3>
+      • Task 7: Add a submit event listener to a form that prevents the default
+      submission and logs the form data to the console.
+    </h3>
+    <form id="f0">
+      <label for="name">Enter Name:</label>
+      <input type="text" id="name" name="name" required />
+      <br />
+      <br />
+      <label for="email">Enter Email:</label>
+      <input type="email" id="email" name="email" required />
+      <br />
+      <br />
+      <label for="age">Enter Age:</label>
+      <input type="age" id="age" name="age" required />
+      <br />
+      <br />
+      <button type="submit">Submit</button>
+    </form>
+    <br /><br />
+    <h3>
+      • Task 8: Add a change event listener to a select dropdown that displays
+      the selected value in a paragraph.
+    </h3>
+    <label for="s0">Select an option:</label>
+    <select name="" id="s0">
+      <option value="">Choose one city</option>
+      <option value="Delhi">Delhi</option>
+      <option value="Mumbai">Mumbai</option>
+      <option value="Bangalore">Bangalore</option>
+      <option value="Calcutta">Calcutta</option>
+    </select>
+
+    <p id="p3">Selected option will be appear here!</p>
+
+    <h3>
+      • Task 9: Add a click event listener to a list that logs the text content
+      of the clicked list item using event delegation.
+    </h3>
+    <ul id="u0">
+      <li>Pune</li>
+      <li>Mumbai</li>
+      <li>Bangalore</li>
+      <li>Delhi</li>
+    </ul>
+    <br /><br />
+    <h3>
+      • Task 10: Add an event listener to a parent element that listens for
+      events from dynamically added child elements.
+    </h3>
+    <div id="pd0">
+      <h4>Parent Div</h4>
+      <!-- child elements will be added here -->
+    </div>
+    <button id="b4">Add Element</button>
+    <script src="Day10.js"></script>
+  </body>
+</html>
