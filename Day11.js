@@ -98,7 +98,7 @@ task5Funmction();
 const task6ApiUrl = "https://jsonplaceholder.typicode.com/users";
 fetch(task6ApiUrl)
   .then((response) => {
-    if (!response) {
+    if (!response.ok) {
       throw new Error("server down!");
     }
     return response.json();
@@ -107,7 +107,7 @@ fetch(task6ApiUrl)
     // console.log(data);
   })
   .catch((error) => {
-    console.error(error.mesage);
+    console.error(error.message);
   });
 
 // • Task 7: Use the fetch API to get data from a public API and log the response data to the console using async/await.
@@ -115,7 +115,7 @@ const task7ApiUrl = "https://jsonplaceholder.typicode.com/users";
 const fetchApi = async () => {
   try {
     const response = await fetch(task7ApiUrl);
-    if (!response) {
+    if (!response.ok) {
       throw new Error("server down!");
     }
     const data = await response.json();
@@ -133,7 +133,7 @@ const postsUrl = "https://jsonplaceholder.typicode.com/posts";
 const fetchUsers = async () => {
   try {
     const response = await fetch(usersUrl);
-    if (!response) {
+    if (!response.ok) {
       throw new Error("server down!");
     }
     // const data = await response.json();
@@ -146,7 +146,7 @@ const fetchUsers = async () => {
 const fetchPosts = async () => {
   try {
     const response = await fetch(postsUrl);
-    if (!response) {
+    if (!response.ok) {
       throw new Error("server down!");
     }
     // const data = await response.json();
